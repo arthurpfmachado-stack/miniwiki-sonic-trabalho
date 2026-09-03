@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/*imagem de fundo*/
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), URL("file:///G:/trabalho/Imagens/green-hill-zone.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  margin: 0;
+  /*escrita*/
+  text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.7);
+  color: white;
+}
+/*abas*/
+.abas {
+  display: flex;
+  background-color: #222222;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+  box-sizing: border-box;
+}
+
+.aba-hedge {
+  flex: 1;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  padding: 40px 0;
+  background-color: green;
+  margin-right:-3.9px;
+  border-radius: 5px 5px 0 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
+}
+.aba-hedge:hover {
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: bold;
+
+}
+.aba-hedge.ativa {
+  background-color: blue;
+  color: yellow;
+  font-weight: bold;
+}
